@@ -1,0 +1,88 @@
+{%extends 'base.html'%}
+{% load static %}
+{%block content%}
+<div class="user_form">
+
+<div class="login-box">
+  <h2>New patient</h2>
+  <form  class="subform"  method="POST" >
+    {% csrf_token %}
+    <div class="user-box">
+      <input type="text" name="fname" required="">
+      <label>Nom</label>
+    </div>
+    <div class="user-box">
+      <input type="text" name="lname" required="">
+      <label>Prénom</label>
+    </div>
+    <div class="user-box">
+      <input type="text" name="Dbirthday"required="">
+      <label>date de naissance</label>
+    </div>
+    <div class="user-box">
+      <input  type="tel" name="number"  required>
+      <label>numéro de téléphone</label>
+    </div>
+    <div class="user-box">
+      <input type="text" name="Pbirthday" required="">
+      <label>lieu de naissance</label>
+    </div>
+    <div class="user-box">
+      <input type="text" name="adresse" required="">
+      <label>adresse</label>
+    </div>
+    <div class="user-box">
+      <input type="text" name="poids" required="">
+      <label>Le poids</label>
+    </div>
+    <div class="user-box">
+      <input type="text" name="Ssante" required="">
+      <label>situation de santé</label>
+    </div>
+    <div class="user-box">
+      <input type="text" name="job" required="">
+      <label>Travail</label>
+    </div>
+    <div class="user-box">
+      <input type="text" name="cancerType" required="">
+      <label>type de cancer</label>
+    </div>
+    <div class="user-box">
+      <input type="text" name="DateDiag" required="">
+      <label>Date de diagnostic</label>
+    </div>
+    <div class="user-box">
+      <input type="text" name="medcin note" required="">
+      <label>medcin note</label>
+    </div>
+    <div class="user-box">
+      <input type="text" name="MdeFam" required="">
+      <label>membre de la famille</label>
+    </div>
+    <div class="user-box">
+      <input type="text" name="NumMdeFam" required="">
+      <label>numéro de téléphone</label>
+    </div>
+    <div class="user-box">
+      <input type="text" name="Sfin" required="">
+      <label>situation financière</label>
+    </div>
+    <div class="user-box">
+      <input type="text" name="etatCivil" required="">
+      <label>État civil</label>
+    </div>
+
+ 
+   
+    
+    <button class="postBtn" type="submit"  >
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Submit</button>
+  </form>
+</div>
+</div>
+ 
+{%endblock%}
